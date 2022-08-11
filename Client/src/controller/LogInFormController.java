@@ -14,5 +14,8 @@ public class LogInFormController {
     public PasswordField txtPassword;
 
     public void logInOnAction(ActionEvent actionEvent) {
+        if (txtUserName.getText().equals("client_1") && txtPassword.getText().equals("1234")){
+
+        }
     }
 }
