@@ -36,7 +36,7 @@ public class ClientForm1Controller {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        });
+        }).start();
     }
 
     public void sendOnAction(ActionEvent actionEvent) throws IOException {

@@ -43,9 +43,7 @@ public class ClientForm2Controller {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-
-
-        });
+        }).start();
     }
 
     public void sendOnAction(ActionEvent actionEvent) throws IOException {
