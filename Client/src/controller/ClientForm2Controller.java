@@ -57,4 +57,8 @@ public class ClientForm2Controller {
     public void getPhoto(MouseEvent mouseEvent) throws IOException {
 
     }
+
+    public void imojiOneOnClick(MouseEvent mouseEvent) {
+
+    }
 }

@@ -5,9 +5,11 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="480.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientForm1Controller">
    <children>
@@ -17,8 +19,22 @@
          </font>
       </Label>
       <Separator layoutX="30.0" layoutY="38.0" prefHeight="0.0" prefWidth="377.0" />
-      <TextArea fx:id="txtClientArea1" layoutX="38.0" layoutY="52.0" prefHeight="360.0" prefWidth="356.0" />
-      <TextField fx:id="txtClientOne" layoutX="38.0" layoutY="422.0" prefHeight="31.0" prefWidth="270.0" />
-      <Button layoutX="329.0" layoutY="422.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="31.0" prefWidth="63.0" text="Send" />
+      <TextArea fx:id="txtClientArea1" layoutX="38.0" layoutY="52.0" prefHeight="315.0" prefWidth="356.0" />
+      <TextField fx:id="txtClientOne" layoutX="38.0" layoutY="427.0" prefHeight="25.0" prefWidth="270.0" />
+      <Button layoutX="362.0" layoutY="425.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="31.0" prefWidth="63.0" text="Send" />
+      <Pane fx:id="imojiPan" layoutX="38.0" layoutY="380.0" prefHeight="39.0" prefWidth="270.0" style="-fx-background-color: green;">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="49.0" onMouseClicked="#imojiOneOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-fat-emoji-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="275.0" layoutY="426.0" onMouseClicked="#imojiOnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-shocker-emoji-24.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

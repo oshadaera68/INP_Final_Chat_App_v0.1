@@ -8,6 +8,8 @@ package controller;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -19,10 +21,14 @@ public class ClientForm1Controller {
     static DataOutputStream dataOutputStream;
     public TextArea txtClientArea1;
     public TextField txtClientOne;
+    public Pane imojiPan;
     Socket socket = null;
     String messageIn = "";
 
     public void initialize() {
+
+        imojiPan.setVisible(false);
+
         new Thread(() -> {
             try {
                 socket = new Socket("localhost", 5000);
@@ -45,5 +51,17 @@ public class ClientForm1Controller {
         txtClientArea1.appendText("\t\t\t\t\t\t\t\tClientOne :" + reply.trim());
         dataOutputStream.writeUTF(reply);
         txtClientOne.setText("");
+    }
+
+    public void imojiOneOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE42");
+    }
+
+    public void imojiOnClick(MouseEvent mouseEvent) {
+        if (!imojiPan.isVisible()) {
+            imojiPan.setVisible(true);
+        } else {
+            imojiPan.setVisible(false);
+        }
     }
 }

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="489.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientForm2Controller">
    <children>
@@ -16,9 +17,17 @@
             <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Label>
-      <TextArea fx:id="txtClientArea1" layoutX="48.0" layoutY="52.0" prefHeight="360.0" prefWidth="356.0" />
+      <TextArea fx:id="txtClientArea1" layoutX="48.0" layoutY="52.0" prefHeight="319.0" prefWidth="356.0" />
       <TextField fx:id="txtClientOne" layoutX="48.0" layoutY="428.0" prefHeight="31.0" prefWidth="270.0" />
       <Button layoutX="339.0" layoutY="428.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="31.0" prefWidth="63.0" text="Send" />
-      <FontAwesomeIconView glyphName="CAMERA" layoutX="295.0" layoutY="448.0" onMouseClicked="#getPhoto" size="15" />
+      <Pane layoutX="48.0" layoutY="384.0" prefHeight="39.0" prefWidth="270.0" style="-fx-background-color: red;">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="2.0" onMouseClicked="#imojiOneOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-shocker-emoji-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
