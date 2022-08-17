@@ -53,15 +53,27 @@ public class ClientForm1Controller {
         txtClientOne.setText("");
     }
 
-    public void imojiOneOnClick(MouseEvent mouseEvent) {
+    //emoji case
+
+    /*Emoji icons setup*/
+    public void emojiOneOnClick(MouseEvent mouseEvent) {
         txtClientOne.appendText("\uD83D\uDE42");
     }
 
-    public void imojiOnClick(MouseEvent mouseEvent) {
-        if (!imojiPan.isVisible()) {
-            imojiPan.setVisible(true);
-        } else {
-            imojiPan.setVisible(false);
-        }
+    public void emojiTwoOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE34");
+    }
+
+    public void emojiThreeOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83E\uDD2D");
+    }
+
+    public void emojiFourOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE07");
+    }
+
+    /*On-click Event*/
+    public void emojiOnClick(MouseEvent mouseEvent) {
+        imojiPan.setVisible(!imojiPan.isVisible());
     }
 }
