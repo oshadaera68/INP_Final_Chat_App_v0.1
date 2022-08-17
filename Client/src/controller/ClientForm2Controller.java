@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 
@@ -26,6 +27,7 @@ public class ClientForm2Controller {
     static DataOutputStream dataOutputStream;
     public TextArea txtClientArea1;
     public TextField txtClientOne;
+    public Pane imojiPan;
 
     String messageIn = "";
 
@@ -54,11 +56,40 @@ public class ClientForm2Controller {
         txtClientOne.setText("");
     }
 
-    public void getPhoto(MouseEvent mouseEvent) throws IOException {
-
+    public void emojiOneOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE42");
     }
 
-    public void imojiOneOnClick(MouseEvent mouseEvent) {
+    public void emojiTwoOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE34");
+    }
 
+    public void emojiThreeOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83E\uDD2D");
+    }
+
+    public void emojiFourOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE07");
+    }
+
+    public void emojiFiveOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("❤");
+    }
+
+    public void emojiSixOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83E\uDD23");
+    }
+
+    public void emojiSevenOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE0D");
+    }
+
+    public void emojiEightOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83E\uDD14");
+    }
+
+    /*On-click Event*/
+    public void emojiOnClick(MouseEvent mouseEvent) {
+        imojiPan.setVisible(!imojiPan.isVisible());
     }
 }

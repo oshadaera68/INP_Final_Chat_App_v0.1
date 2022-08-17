@@ -53,7 +53,7 @@ public class ClientForm1Controller {
         txtClientOne.setText("");
     }
 
-    //emoji case
+    /*emoji case*/
 
     /*Emoji icons setup*/
     public void emojiOneOnClick(MouseEvent mouseEvent) {
@@ -70,6 +70,22 @@ public class ClientForm1Controller {
 
     public void emojiFourOnClick(MouseEvent mouseEvent) {
         txtClientOne.appendText("\uD83D\uDE07");
+    }
+
+    public void emojiFiveOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("❤");
+    }
+
+    public void emojiSixOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83E\uDD23");
+    }
+
+    public void emojiSevenOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83D\uDE0D");
+    }
+
+    public void emojiEightOnClick(MouseEvent mouseEvent) {
+        txtClientOne.appendText("\uD83E\uDD14");
     }
 
     /*On-click Event*/

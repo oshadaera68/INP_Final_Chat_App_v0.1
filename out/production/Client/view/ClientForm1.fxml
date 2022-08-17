@@ -44,6 +44,26 @@
                   <Image url="@../assets/icons8-smiling-face-with-halo-48.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="147.0" onMouseClicked="#emojiFiveOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-red-heart-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="181.0" onMouseClicked="#emojiSixOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-rolling-on-the-floor-laughing-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="219.0" layoutY="-1.0" onMouseClicked="#emojiSevenOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-smiling-face-with-heart-eyes-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="255.0" layoutY="-1.0" onMouseClicked="#emojiEightOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-thinking-face-48.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="305.0" layoutY="427.0" onMouseClicked="#emojiOnClick" pickOnBounds="true" preserveRatio="true">
